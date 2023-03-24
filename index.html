@@ -1,63 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>InnovaZen Advisors</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-xkY1uQh2QlfB8sDGsZ0DjTH6XDFuzRrtx8eUgkf6U0T6G3w6T1cS65Gzz7b1e6XuV7xP4o4jfzLGd4OAWL1vyQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body><script src="script.js"></script>
 
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="logo.png" alt="InnovaZen Advisors">
-            </div>
-            <button class="menu-btn" id="menu-btn"><i class="fas fa-bars"></i></button>
-            <ul class="menu" id="menu">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Acerca de</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li><a href="mailto:innovazen@gmail.com"><i class="far fa-envelope"></i></a></li>
-                <li><a href="https://www.instagram.com/innovazen.advisors/"><i class="fab fa-instagram"></i></a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <section class="hero">
-            <h1>InnovaZen Advisors</h1>
-            <p>Tu socio para el éxito empresarial.</p>
-            <a href="#" class="btn">Contacto</a>
-        </section>
-        
-        <section class="services">
-            <h2>Nuestros Servicios</h2>
-            <ul>
-                <li>Asesoramiento para emprendedores</li>
-                <li>Estrategias de Marketing</li>
-                <li>Desarrollo empresarial</li>
-                <li>Consultoría para pequeñas y medianas empresas</li>
-            </ul>
-        </section>
-        
-        <section class="about">
-            <h2>Acerca de Nosotros</h2>
-            <p>Somos una empresa de consultoría empresarial enfocada en ayudar a emprendedores y empresas en crecimiento a alcanzar su máximo potencial.</p>
-        </section>
-        
-        <section class="contact">
-            <h2>Contacto</h2>
-            <form action="submit-form.php" method="POST">
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Mensaje:</label>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InnovaZen Advisors</title>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-xkY1uQh2QlfB8sDGsZ0DjTH6XDFuzRrtx8eUgkf6U0T6G3w6T1cS65Gzz7b1e6XuV7xP4o4jfzLGd4OAWL1vyQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Scripts -->
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!-- Encabezado -->
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="logo.png" alt="InnovaZen Advisors">
+      </div>
+      <button class="menu-btn" id="menu-btn"><i class="fas fa-bars"></i></button>
+      <ul class="menu" id="menu">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Acerca de</a></li>
+        <li><a href="#">Contacto</a></li>
+        <li><a href="mailto:innovazen@gmail.com"><i class="far fa-envelope"></i></a></li>
+        <li><a href="https://www.instagram.com/innovazen.advisors/"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Cuerpo -->
+  <main>
+    <!-- Sección de presentación -->
+    <section class="hero">
+      <h1>InnovaZen Advisors</h1>
+      <p>Tu socio para el éxito empresarial.</p>
+      <a href="#" class="btn">Contacto</a>
+    </section>
+
+    <!-- Sección de servicios -->
+    <section class="services">
+      <h2>Nuestros Servicios</h2>
+      <ul>
+        <li>Asesoramiento para emprendedores</li>
+        <li>Estrategias de Marketing</li>
+        <li>Desarrollo empresarial</li>
+        <li>Consultoría para pequeñas y medianas empresas</li>
+      </ul>
+    </section>
+
+    <!-- Sección "Acerca de" -->
+    <section class="about">
+      <h2>Acerca de Nosotros</h2>
+      <p>Somos una empresa de consultoría empresarial enfocada en ayudar a emprendedores y empresas en crecimiento a alcanzar su máximo potencial.</p>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section class="contact">
+      <h2>Contacto</h2>
+      <form action="submit-form.php" method="POST">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+                   <label for="message">Mensaje:</label>
                 <textarea id="message" name="message" required></textarea>
                 
                 <button type="submit" class="btn">Enviar</button>
@@ -65,4 +77,11 @@
         </section>
     </main>
     
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2023 InnovaZen Advisors. Todos los derechos reservados.</p>
+    </footer>
+    
+</body>
+</html>
 
