@@ -1,0 +1,29 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 //Funci\'f3n que se ejecuta al cargar la p\'e1gina\
+window.onload = function() \{\
+  //Obtener el bot\'f3n de "Contacto"\
+  var btnContacto = document.getElementById("btn-contacto");\
+  \
+  //A\'f1adir un evento de click al bot\'f3n de "Contacto"\
+  btnContacto.addEventListener("click", function() \{\
+    //Obtener el nombre y correo electr\'f3nico del usuario\
+    var nombre = document.getElementById("input-nombre").value;\
+    var correo = document.getElementById("input-correo").value;\
+    \
+    //Validar que el usuario haya ingresado su nombre y correo electr\'f3nico\
+    if (nombre === "" || correo === "") \{\
+      alert("Por favor, ingrese su nombre y correo electr\'f3nico.");\
+      return;\
+    \}\
+    \
+    //Enviar un mensaje de confirmaci\'f3n al usuario\
+    alert("Gracias por contactarnos, " + nombre + ". Nos pondremos en contacto contigo pronto.");\
+  \});\
+\};\
+}
